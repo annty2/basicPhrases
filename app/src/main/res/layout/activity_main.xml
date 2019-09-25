@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="380dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="4">
+
+        <Button
+            android:id="@+id/doYouSpeakEnglish"
+            android:layout_width="180dp"
+            android:onClick="translate"
+            android:tag="doyouspeakenglish"
+            android:text="DO YOU \nSPEAK ENGLISH?"
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/goodEvening"
+            android:layout_width="180dp"
+            android:onClick="translate"
+            android:text="GOOD EVENING"
+            app:layout_columnWeight="1"
+            app:layout_column="1"
+            app:layout_gravity="fill"
+            app:layout_row="0"
+            app:layout_rowWeight="1"
+            android:tag="goodevening"/>
+
+        <Button
+            android:id="@+id/iLiveIn"
+            android:onClick="translate"
+            android:text="I LIVE IN..."
+            android:layout_width="180dp"
+            app:layout_columnWeight="1"
+            app:layout_column="0"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            android:tag="ilivein"/>
+
+        <Button
+            android:id="@+id/myNameIs"
+            android:onClick="translate"
+            android:text="MY NAME IS..."
+            android:layout_width="180dp"
+            app:layout_columnWeight="1"
+            app:layout_column="1"
+            app:layout_gravity="fill"
+            app:layout_row="2"
+            app:layout_rowWeight="1"
+            android:tag="mynameis"/>
+
+        <Button
+            android:id="@+id/please"
+            android:onClick="translate"
+            android:text="PLEASE"
+            android:layout_width="180dp"
+            app:layout_columnWeight="1"
+            app:layout_column="0"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="1"
+            android:tag="please"/>
+
+        <Button
+            android:id="@+id/welcome"
+            android:onClick="translate"
+            android:text="WELCOME"
+            android:layout_width="180dp"
+            app:layout_columnWeight="1"
+            app:layout_column="1"
+            app:layout_gravity="fill"
+            app:layout_row="3"
+            app:layout_rowWeight="1"
+            android:tag="welcome"/>
+
+        <Button
+            android:id="@+id/hello"
+            android:layout_width="180dp"
+            android:onClick="translate"
+            android:tag="hello"
+            android:text="HELLO"
+
+            app:layout_column="0"
+            app:layout_columnWeight="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
+
+        <Button
+            android:id="@+id/howAreYou"
+            android:onClick="translate"
+            android:text="HOW ARE YOU?"
+            app:layout_columnWeight="1"
+            app:layout_column="1"
+            app:layout_gravity="fill"
+            app:layout_row="1"
+            app:layout_rowWeight="1"
+            android:tag="howareyou"/>
+
+
+
+    </android.support.v7.widget.GridLayout>
+</android.support.constraint.ConstraintLayout>
